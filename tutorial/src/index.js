@@ -1,6 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const myfirstelement = <h1>Hello React!</h1>
+const myelement = (
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>Paola</td>
+        </tr>
+        <tr>
+            <td>Natalia</td>
+        </tr>
+    </table>
+);
 
-ReactDOM.render(myfirstelement, document.getElementById('root'));
+ReactDOM.render(myelement, document.getElementById("root"));
