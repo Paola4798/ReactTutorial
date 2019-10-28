@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Function</title>
+</head>
+<body>
+        <p id="normal"></p>
+        <p id="arrow"></p>
+        <p id="return"></p>
+        <p id="params"></p>
+        <script>
+            //Esto es una funcion regular, NOT an arrow function
+                hello = function() { 
+                  return "Hello World!";
+                }
+                
+                document.getElementById("normal").innerHTML = hello();
+
+                //Simple arrow function
+                hello = () => {
+                    return "Hello World!";
+                  }
+                  
+                  document.getElementById("arrow").innerHTML = hello();
+
+                  //This arrow function expects a return value, and retunrs
+                  //the value by default, without the return keyword
+                  hello = () => "Hello World!"
+                  document.getElementById("return").innerHTML = hello();
+
+                  //This is an arrow functio with params
+                  hello = (val) => "Hello" + val;
+                //hello = val => "Hello" + val;
+                  document.getElementById("params").innerHTML = hello("World!")
+                </script>
+    
+</body>
+</html>
