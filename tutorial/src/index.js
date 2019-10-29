@@ -16,3 +16,7 @@ const myelement = (
 );
 
 ReactDOM.render(myelement, document.getElementById("root"));
+
+//JSX
+const myjsx = <h1>I love JSX!</h1>;
+ReactDOM.render(myjsx, document.getElementById("root"));
